@@ -51,15 +51,15 @@ p {
   width: 308px;
 }
 
-.btn-group svg {
+.btn-group img {
   margin-left: 14px;
   margin-right: 14px;
 }
 
-.btn-group svg:first-child {
+.btn-group img:first-child {
   margin-left: 0;
 }
 
-.btn-group svg:last-child {
+.btn-group img:last-child {
   margin-right: 0;
 }
