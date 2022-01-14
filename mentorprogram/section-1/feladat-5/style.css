@@ -13,3 +13,23 @@ body {
   padding: 10px;
   background-color: #e5e5e5;
 }
+
+.container {
+  width: fit-content;
+  height: 60px;
+  background-color: #363636;
+  border-radius: 30px;
+}
+
+.container img:first-child {
+  margin-left: 0;
+}
+
+.container img:last-child {
+  margin-right: 0;
+}
+
+.container img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
