@@ -13,3 +13,53 @@ body {
   padding: 10px;
   background-color: #e5e5e5;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1334px;
+  width: 100%;
+  min-height: 120px;
+  background-color: #fff;
+}
+
+h6 {
+  margin-left: 15px;
+  font-size: 28px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 32.81px;
+  text-align: center;
+  color: #000;
+}
+
+p {
+  margin-left: 114px;
+  margin-right: 77px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  color: #000;
+}
+
+.btn-group {
+  display: flex;
+  margin-left: auto;
+  margin-right: 32px;
+  width: 308px;
+}
+
+.btn-group svg {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.btn-group svg:first-child {
+  margin-left: 0;
+}
+
+.btn-group svg:last-child {
+  margin-right: 0;
+}
