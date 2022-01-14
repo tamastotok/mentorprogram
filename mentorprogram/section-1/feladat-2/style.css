@@ -35,10 +35,10 @@ body {
 
 .text p {
   font-size: 20px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   line-height: 30.24px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .text p:first-child {
@@ -81,7 +81,7 @@ body {
 }
 
 .btn-group button:last-child {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   width: 88px;
   height: 40px;
   padding-top: 11px;
