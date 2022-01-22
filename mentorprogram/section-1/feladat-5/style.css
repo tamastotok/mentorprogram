@@ -21,15 +21,27 @@ body {
   border-radius: 30px;
 }
 
-.container img:first-child {
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  outline: 2px solid red;
+}
+
+.container button:first-child {
   margin-left: 0;
 }
 
-.container img:last-child {
+.container button:last-child {
   margin-right: 0;
 }
 
-.container img {
-  margin-left: 10px;
-  margin-right: 10px;
+.container button {
+  margin: 0 10px;
 }

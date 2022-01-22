@@ -14,17 +14,37 @@ body {
   background-color: #e5e5e5;
 }
 
-.container {
+table {
+  background-color: #fff;
+  height: 120px;
+  display: block;
+  border-spacing: 0;
+}
+
+tr {
   display: flex;
   align-items: center;
-  max-width: 1334px;
-  width: 100%;
-  min-height: 120px;
-  background-color: #fff;
+}
+
+td {
+  display: block;
+  height: fit-content;
+}
+
+.table-image {
+  width: 120px;
+  height: 120px;
+}
+
+.first-col {
+  margin-left: 15px;
+}
+
+.second-col {
+  margin: 0 77px 0 114px;
 }
 
 h6 {
-  margin-left: 15px;
   font-size: 28px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -34,8 +54,6 @@ h6 {
 }
 
 p {
-  margin-left: 114px;
-  margin-right: 77px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -44,22 +62,28 @@ p {
   color: #000;
 }
 
-.btn-group {
-  display: flex;
-  margin-left: auto;
-  margin-right: 32px;
-  width: 308px;
+button {
+  border: none;
+  border-radius: 28px;
+  width: 56px;
+  height: 56px;
+  background: none;
+  margin: 0 14px;
+  cursor: pointer;
 }
 
-.btn-group img {
-  margin-left: 14px;
-  margin-right: 14px;
-}
-
-.btn-group img:first-child {
+button:first-child {
   margin-left: 0;
 }
 
-.btn-group img:last-child {
-  margin-right: 0;
+button:last-child {
+  margin-right: 32px;
+}
+
+button img {
+  border-radius: 28px;
+}
+
+button img:hover {
+  outline: 2px solid black;
 }

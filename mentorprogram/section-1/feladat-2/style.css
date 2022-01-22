@@ -27,10 +27,7 @@ body {
 }
 
 .text {
-  margin-top: 12px;
-  margin-bottom: 13.1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 12px 10px 13.1px 10px;
 }
 
 .text p {
@@ -53,40 +50,36 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
-.btn-group button {
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #fff;
+  border: none;
   border-radius: 8px;
-  margin-bottom: 22px;
-  margin-left: 11.49px;
-  margin-right: 11.49px;
+  margin: 0 11.49px 0 11.49px;
+  height: 40px;
   font-size: 14px;
   font-family: 'Work Sans', sans-serif;
   line-height: 24px;
   color: #f2f2f2;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.btn-group button:first-child {
-  border: 1px solid #f2f2f2;
+button:hover {
+  outline: 2px solid #000;
+}
+
+button:first-child {
   width: 114px;
-  height: 40px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 32px;
   background-color: #bfbfbf;
 }
 
-.btn-group button:last-child {
-  border: 1px solid #fff;
+button:last-child {
   width: 88px;
-  height: 40px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 37px;
-  padding-right: 37px;
   background-color: #ef3a43;
 }
