@@ -14,7 +14,7 @@ body {
   background-color: #e5e5e5;
 }
 
-.container-1 {
+.main-profile {
   margin-right: 10px;
   width: 300px;
   height: 300px;
@@ -23,7 +23,7 @@ body {
   padding: 22px 32px 0 32px;
 }
 
-.container-1 h6 {
+.main-profile h6 {
   margin-top: 4.47px;
   font-size: 26px;
   font-family: 'Roboto', sans-serif;
@@ -33,7 +33,7 @@ body {
   color: #fff;
 }
 
-.container-2 {
+.icon-profile {
   margin-left: 10px;
   width: 300px;
   height: 125px;
@@ -41,7 +41,7 @@ body {
   background-color: #006633;
 }
 
-.container-2 img {
+.icon-profile img {
   display: block;
   margin: -19% auto 0 auto;
   width: 128px;
@@ -50,7 +50,7 @@ body {
   border-radius: 100%;
 }
 
-.container-2 h6 {
+.icon-profile h6 {
   margin-top: 5px;
   height: 21px;
   font-size: 20px;
@@ -61,7 +61,7 @@ body {
   color: #fff;
 }
 
-.container-2 p {
+.icon-profile p {
   margin-top: auto;
   height: 21px;
   font-size: 16px;
