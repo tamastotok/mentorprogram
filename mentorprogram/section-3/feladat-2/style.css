@@ -57,7 +57,7 @@ svg:hover path {
 
 header {
   width: 100%;
-  height: 170px;
+  min-height: 170px;
   padding-top: 10px;
   background-color: var(--green-20);
 }
@@ -65,7 +65,7 @@ header {
 .top,
 .bottom {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -100,6 +100,8 @@ header {
 }
 
 .sport-group {
+  display: flex;
+  flex-wrap: nowrap;
   margin-left: 21px;
 }
 
@@ -124,6 +126,7 @@ header {
 .searchbar input {
   border: none;
   border-radius: 44px;
+  min-width: 400px;
   max-width: 849px;
   width: 100%;
   height: 80px;
