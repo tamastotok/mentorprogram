@@ -1,5 +1,156 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray-90: #e5e5e5;
+  --gray-75: #bfbfbf;
+  --gray-21: #363636;
+  --green-78: #b1ddc4;
+  --green-45: #55ae3a;
+  --green-20: #006633;
+  --red-58: #ef3a43;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 46.88px;
+  color: var(--green-20);
+}
+
+span {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 37.5px;
+  color: var(--green-20);
+}
+
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 456px;
+  width: 100%;
+}
+
+.profile {
+  margin: 34px 0 7px 0;
+}
+
+.name {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 4px;
+  width: 100%;
+  height: 32px;
+  background-color: var(--green-20);
+}
+
+.skew {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  height: 32px;
+  padding: 0 20px;
+  background-color: var(--white);
+  transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -webkit-transform: skew(-25deg);
+}
+
+.skew img {
+  margin-right: 6px;
+  transform: skew(25deg);
+  -ms-transform: skew(25deg);
+  -webkit-transform: skew(25deg);
+}
+
+.skew p {
+  transform: skew(25deg);
+  -ms-transform: skew(25deg);
+  -webkit-transform: skew(25deg);
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  line-height: 23.44px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.data {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.data p {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 28.13px;
+  color: var(--green-20);
+}
+
+.labels {
+  margin: 0 auto 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sport {
+  display: flex;
+  align-items: center;
+  margin: 0 4px 2px 0;
+  padding: 4px 16px 4px 6px;
+  border-radius: 68px;
+  background-color: var(--green-20);
+  cursor: pointer;
+}
+
+.sport:hover {
+  background-color: var(--green-45);
+}
+
+.sport p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.bio {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 28.13px;
+  color: var(--green-20);
+  padding: 8px;
+}
