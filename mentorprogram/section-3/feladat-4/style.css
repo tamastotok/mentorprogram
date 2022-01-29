@@ -106,8 +106,22 @@ svg:hover path {
   fill: var(--white);
 }
 
-.data svg:hover circle {
+.data svg:hover circle,
+.nav svg:hover circle {
   fill: var(--green-20);
+}
+
+.nav {
+  display: none;
+}
+
+.nav svg {
+  cursor: pointer;
+}
+
+.nav svg:hover path {
+  fill: var(--white);
+  stroke: var(--white);
 }
 
 .data svg:hover path {
@@ -142,6 +156,12 @@ svg:hover path {
 }
 
 @media screen and (max-width: 556px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 8px;
+  }
   .profile {
     margin: 0 auto;
   }
