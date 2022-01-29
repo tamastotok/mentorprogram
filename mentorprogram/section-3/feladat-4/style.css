@@ -1,5 +1,174 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray-90: #e5e5e5;
+  --gray-75: #bfbfbf;
+  --gray-21: #363636;
+  --green-78: #b1ddc4;
+  --green-45: #55ae3a;
+  --green-20: #006633;
+  --red-58: #ef3a43;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 100%;
+  margin-bottom: 19px;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 32.81px;
+  color: var(--black);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.profile {
+  width: 256px;
+  height: 256px;
+}
+
+.data-container {
+  margin: 0 25px 0 18px;
+  width: 240px;
+}
+
+.content {
+  max-width: 791px;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  bottom: 25px;
+  left: -193px;
+  border: none;
+  border-radius: 44px;
+  padding: 16px 32px;
+  background-color: var(--green-20);
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  line-height: 18.77px;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--green-45);
+}
+
+.content p {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: justify;
+  color: var(--black);
+}
+
+.data {
+  margin-right: 45px;
+}
+
+.data,
+.link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.data svg,
+.link svg {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+svg:hover path {
+  fill: var(--green-45);
+}
+
+.chat-svg:hover path:first-child {
+  fill: var(--green-45);
+}
+.chat-svg:hover path:last-child {
+  fill: var(--white);
+}
+
+.data svg:hover circle {
+  fill: var(--green-20);
+}
+
+.data svg:hover path {
+  fill: var(--green-20);
+  stroke: var(--white);
+}
+
+.tree:hover path {
+  fill: var(--white) !important;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 11px 60px 0 0;
+}
+
+@media screen and (max-width: 1345px) {
+  .container {
+    display: flex;
+    justify-content: center;
   }
+
+  button {
+    display: block;
+    position: initial;
+    margin: 13px auto 29px auto;
+  }
+  .content {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .profile {
+    margin: 0 auto;
+  }
+  .data-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10px 9px 10px;
+  }
+
+  .link span {
+    display: none;
+  }
+
+  .social {
+    justify-content: center;
+    margin: 11px auto 0 auto;
+  }
+  .left,
+  .right {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .data-container {
+    justify-content: initial;
+  }
+}
