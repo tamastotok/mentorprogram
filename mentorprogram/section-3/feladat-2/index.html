@@ -1,17 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./style.css" />
-    <title>1. Feladat</title>
-</head>
-<body>
-    
-</body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>2. Feladat</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <img class="burger" src="./assets/menu.svg" alt="burger-menu" />
+        <img class="logo" src="./assets/logo.svg" alt="logo" />
+
+        <button class="links">
+          <img src="./assets/mic.svg" alt="interviews" />
+          Interjúk
+        </button>
+
+        <button class="links">
+          <img src="./assets/pic.svg" alt="portraits" />
+          Portrék
+        </button>
+
+        <button class="links">
+          <img src="./assets/stats.svg" alt="stats" />
+          Elemzések
+        </button>
+
+        <button class="links">
+          <img src="./assets/book.svg" alt="cultures" />
+          Kultúra
+        </button>
+
+        <div class="icon-group">
+          <svg
+            class="search-svg"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.1667 34.8333C28.2668 34.8333 34.8333 28.2668 34.8333 20.1667C34.8333 12.0665 28.2668 5.5 20.1667 5.5C12.0665 5.5 5.5 12.0665 5.5 20.1667C5.5 28.2668 12.0665 34.8333 20.1667 34.8333Z"
+              stroke="white"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5001 38.5016L30.5251 30.5266"
+              stroke="white"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.3999 11.0001C4.3999 9.83314 4.86347 8.71399 5.68863 7.88883C6.51379 7.06367 7.63295 6.6001 8.7999 6.6001H24.1999C25.3669 6.6001 26.486 7.06367 27.3112 7.88883C28.1363 8.71399 28.5999 9.83314 28.5999 11.0001V19.8001C28.5999 20.967 28.1363 22.0862 27.3112 22.9114C26.486 23.7365 25.3669 24.2001 24.1999 24.2001H19.7999L13.1999 30.8001V24.2001H8.7999C7.63295 24.2001 6.51379 23.7365 5.68863 22.9114C4.86347 22.0862 4.3999 20.967 4.3999 19.8001V11.0001Z"
+              fill="white"
+            />
+            <path
+              d="M32.9994 15.3999V19.7999C32.9994 22.1338 32.0723 24.3721 30.422 26.0224C28.7717 27.6728 26.5333 28.5999 24.1994 28.5999H21.621L17.7358 32.4873C18.3518 32.8151 19.0536 32.9999 19.7994 32.9999H24.1994L30.7994 39.5999V32.9999H35.1994C36.3664 32.9999 37.4855 32.5363 38.3107 31.7112C39.1359 30.886 39.5994 29.7669 39.5994 28.5999V19.7999C39.5994 18.6329 39.1359 17.5138 38.3107 16.6886C37.4855 15.8635 36.3664 15.3999 35.1994 15.3999H32.9994Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M38.5 34.8334V36.6667H5.5V34.8334L9.16667 31.1667V20.1667C9.16667 14.4834 12.8883 9.47841 18.3333 7.86508C18.3333 7.68175 18.3333 7.51675 18.3333 7.33341C18.3333 6.36095 18.7196 5.42832 19.4073 4.74069C20.0949 4.05306 21.0275 3.66675 22 3.66675C22.9725 3.66675 23.9051 4.05306 24.5927 4.74069C25.2804 5.42832 25.6667 6.36095 25.6667 7.33341C25.6667 7.51675 25.6667 7.68175 25.6667 7.86508C31.1117 9.47841 34.8333 14.4834 34.8333 20.1667V31.1667L38.5 34.8334ZM25.6667 38.5001C25.6667 39.4725 25.2804 40.4052 24.5927 41.0928C23.9051 41.7804 22.9725 42.1667 22 42.1667C21.0275 42.1667 20.0949 41.7804 19.4073 41.0928C18.7196 40.4052 18.3333 39.4725 18.3333 38.5001"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.90527 38.5001V25.6667"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.90527 18.3333V5.5"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 38.5V22"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 14.6667V5.5"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M34.3091 38.4999V29.3333"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M34.3091 22V5.5"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3.40527 25.6667H14.4053"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.5 14.6667H27.5"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M28.8091 29.3333H39.8091"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <img class="pointer hover" src="./assets/profile.svg" alt="profile" />
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.3333 31.1658V25.6658H16.5V18.3324H29.3333V12.8324L38.5 21.9991L29.3333 31.1658ZM25.6667 3.66577C26.6391 3.66577 27.5718 4.05208 28.2594 4.73971C28.947 5.42735 29.3333 6.35998 29.3333 7.33244V10.9991H25.6667V7.33244H9.16667V36.6658H25.6667V32.9991H29.3333V36.6658C29.3333 37.6382 28.947 38.5709 28.2594 39.2585C27.5718 39.9461 26.6391 40.3324 25.6667 40.3324H9.16667C8.19421 40.3324 7.26157 39.9461 6.57394 39.2585C5.88631 38.5709 5.5 37.6382 5.5 36.6658V7.33244C5.5 6.35998 5.88631 5.42735 6.57394 4.73971C7.26157 4.05208 8.19421 3.66577 9.16667 3.66577H25.6667Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="sport-group">
+          <img class="pointer hover" src="./assets/rugby.svg" alt="rugby" />
+          <img
+            class="pointer hover"
+            src="./assets/team-logo.svg"
+            alt="detroit pistons"
+          />
+          <img
+            class="pointer hover"
+            src="./assets/team-profile.svg"
+            alt="team profile"
+          />
+        </div>
+
+        <div class="searchbar">
+          <img src="./assets//searchbar-icon.svg" alt="searchbar icon" />
+          <div class="line"></div>
+          <input
+            type="text"
+            placeholder="Search"
+            name="searchbar"
+            id="searchbar"
+          />
+        </div>
+
+        <div class="current-date">
+          <img src="./assets/header-super-prev-btn.svg" alt="super prev btn" />
+          <img src="./assets/header-prev-btn.svg" alt="prev btn" />
+          <p>2020/11/28</p>
+          <img src="./assets/header-next-btn.svg" alt="next btn" />
+          <img src="./assets/header-super-next-btn.svg" alt="super next btn" />
+        </div>
+
+        <img class="post pointer hover" src="./assets/post.svg" alt="post" />
+      </div>
+    </header>
+  </body>
 </html>
