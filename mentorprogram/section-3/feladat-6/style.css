@@ -21,8 +21,7 @@
   margin-top: 0;
   margin-bottom: 86px;
   width: 100%;
-  background: url('./assets/triangles.png') repeat-x 0 0;
-  background-size: contain;
+  background: url('./assets/triangles.png') 0 0 / contain repeat-x;
   height: 100vh;
   max-height: 174px;
 }
