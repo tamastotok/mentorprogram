@@ -21,13 +21,18 @@
   margin-top: 0;
   margin-bottom: 86px;
   width: 100%;
+  background: url('./assets//triangles.png') repeat-x 0 0;
+  background-size: contain;
+  height: 100vh;
+  max-height: 174px;
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 85px;
+  width: fit-content;
+  margin: 0 auto 85px auto;
   padding: 0 20px;
 }
 
@@ -42,7 +47,10 @@
 
 .links {
   margin-right: 37.5px;
+  max-width: 700px;
+  width: 100%;
   height: fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-areas:
     'left mid right'
@@ -51,12 +59,10 @@
 
 .left {
   grid-area: left;
-  margin-right: 74px;
 }
 
 .mid {
   grid-area: mid;
-  margin-right: 74px;
 }
 
 .right {
@@ -86,7 +92,7 @@
   border-bottom: 2px solid transparent;
   margin-left: 16px;
   width: fit-content;
-  font-size: calc(1vmax + 4px);
+  font-size: 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 31.27px;
@@ -185,7 +191,7 @@ input[type='checkbox']:focus {
   border: none;
   background-color: var(--green-45);
   box-shadow: 0px 1px 2px var(--box-shadow), 0px 2px 4px var(--box-shadow);
-  font-size: 31px;
+  font-size: 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 36.33px;
@@ -234,13 +240,44 @@ footer {
   width: fit-content;
 }
 
-@media screen and (max-width: 1896px) {
+@media screen and (max-width: 1912px) {
   .content {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 1175px) {
+  .triangles {
+    max-height: 93px;
+    margin-bottom: 47px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+
+  .links {
+    margin-right: 0;
+    max-width: 640px;
+  }
+
+  .mid {
+    place-self: start center;
+  }
+
+  .right {
+    place-self: start end;
+  }
+
+  .social {
+    place-self: start center;
+  }
+
+  .social svg {
+    width: 60px;
+    height: 60px;
+  }
+
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -261,8 +298,55 @@ footer {
     margin: 0 auto;
   }
 
-  .footer-links p,
-  .copyright {
+  .footer-links p {
     font-size: 26px;
+  }
+
+  .copyright {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .triangles {
+    margin-bottom: 16px;
+    max-height: 38px;
+  }
+
+  .links h4 {
+    font-size: 3.4vmin;
+  }
+
+  .links p {
+    font-size: 2.9vmin;
+  }
+
+  .sub-title h4 {
+    font-size: 5vmin;
+  }
+
+  .sub input {
+    font-size: 3.4vmin;
+  }
+
+  .sub button {
+    font-size: 5vmin;
+  }
+
+  .social svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links p {
+    font-size: 3.1vmin;
+  }
+  .copyright {
+    font-size: 3.4vmin;
   }
 }
