@@ -7,8 +7,8 @@
   --green-78: #b1ddc4;
   --green-45: #55ae3a;
   --green-20: #006633;
-  --red-58: #ef3a43;
   --box-shadow: #1e1e22;
+  --yellow: #ffe600;
 }
 
 * {
@@ -77,6 +77,11 @@
 
 .social svg {
   margin-right: 8px;
+  cursor: pointer;
+}
+
+.social svg:hover path:first-child {
+  fill: var(--green-45);
 }
 
 .links h4 {
@@ -200,10 +205,15 @@ input[type='checkbox']:focus {
 }
 
 .sub button:hover {
-  outline: 3px solid var(--black);
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
-.sub button img {
+.sub button:hover svg path {
+  fill: var(--black);
+}
+
+.sub button svg {
   margin-right: 9px;
 }
 
@@ -228,6 +238,7 @@ footer {
   color: var(--white);
   text-align: center;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .copyright {
@@ -238,6 +249,12 @@ footer {
   color: var(--white);
   margin: 0 auto;
   width: fit-content;
+  cursor: pointer;
+}
+
+.footer-links p:hover,
+.copyright:hover {
+  color: var(--black);
 }
 
 @media screen and (max-width: 1912px) {
